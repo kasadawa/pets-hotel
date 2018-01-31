@@ -376,3 +376,14 @@ label{
     width: 100px;
     text-align: left;
 }
+.paragraph {
+    color:white;
+    text-align: center;
+}
+
+.petsHotel {
+    color: #800080;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
