@@ -136,7 +136,7 @@ article a{
     font-size: 350%;
     text-align:center;
 }
-.movie-container article{
+.hotel-container article{
     color:white;
 }
 article a:hover{
@@ -147,7 +147,7 @@ section div{
     display:flex;
     width:50%;
 }
-.movie-container {
+.hotel-container {
      float:left;
      margin-bottom:40px;
      min-width: 400px;
@@ -157,21 +157,21 @@ section div{
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.img-all-movies, article{
+.img-all-hotel, article{
     flex:1;
     margin:5px;
 }
 
-.img-all-movies{
+.img-all-hotel{
     margin:50px;
     height:100%;
     width:50%;
     transition:transform 0.5s ease-in;
 }
-.img-all-movies:hover{
+.img-all-hotel:hover{
     transform:scale(1.2);
 }
-.movie-titles-all-movies{
+.hotel-titles-all-hotel{
     font-size: 26px;
     font-weight: bold;
     min-height: 70px;
@@ -211,20 +211,20 @@ input[type="button"]:hover{
     transition:background 0.4s ease-out;
     border:none;
 }
-.movie-summary {
+.hotel-summary {
     display: inline-block;
     width: 100%;
     height: 295px;
     overflow: hidden;
 }
-.movie-description{
+.hotel-description{
     display: block;
     width:100%;
 }
-.main-movie-info{
+.main-hotel-info{
     color:white;
 }
-.movie{
+.hotel{
     position:relative;
 }
 
@@ -234,7 +234,7 @@ input[type="button"]:hover{
     display: inline-block;
 }
 
-.single-movie-left .img-all-movies {
+.single-movie-left .img-all-hotel {
     width: 400px;
     margin: 0px ;
     padding: 10%;
@@ -273,13 +273,13 @@ input[type="button"]:hover{
     font-size:20px;
 }
 
-.moreMovies {
+.moreHotel {
     width:100%;
     height:auto;
     margin: 0;
 }
 
-.moreMovies header {
+.moreHotel header {
     display:flex;
     justify-content: center;
     width:100%;
@@ -288,7 +288,7 @@ input[type="button"]:hover{
     font-size: 40px;
 }
 
-.moreMovies {
+.moreHotel {
     width: 100%;
     height: auto;
     color: #ffffff;
@@ -344,8 +344,7 @@ input[type="button"]:hover{
     background:none;
 }
 
-
-.movieGallery {
+.hotelGallery {
     height:100%;
     width:100%;
 }

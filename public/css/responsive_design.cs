@@ -28,18 +28,18 @@
         align-items: center;
     }
 
-    .movie-container{
+    .hotel-container{
         margin:40px 15%;
         width: 70%;
     }
 	
-/*	.single-movie-left{
+/*	.single-hotel-left{
 		justify-content:center;
 		display:block;
 		width:100%;
 		float: none;
 	}
-	.single-movie-left .rating{
+	.single-hotel-left .rating{
 		display:block;
 		margin: auto;
 	}*/
