@@ -1,0 +1,14 @@
+{
+  "name": "pets-hotel",
+  "version": "1.0.0",
+  "description": "Special project for pets hotel",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Georgi Dimov, Stefan Ivanov",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
