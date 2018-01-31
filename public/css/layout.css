@@ -43,7 +43,7 @@ footer{
     width: 100%;
 }
 
-#title a {
+#homeLogo {
     font-size: 50px;
     font-weight:bold;
     color:#ffffff;
@@ -347,4 +347,32 @@ input[type="button"]:hover{
 .hotelGallery {
     height:100%;
     width:100%;
+}
+
+
+/*--- new --- */
+.loginButton{
+    width:auto;
+    height: auto; 
+    float: right;
+    margin:90px 0 0 40px;
+}
+form.loginForm{
+    /* display: inline-block; */
+    text-align: center;
+    padding-top:5%;
+    color:white;
+}
+.loginTitle{
+    text-align: center;
+    padding-top:2%;
+    color:white;
+    font-size: 36px; 
+    font-weight: bold;
+}
+label{
+    color:white;
+    display:inline-block;
+    width: 100px;
+    text-align: left;
 }

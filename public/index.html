@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang=en>
-    <head>
-        <meta charset="UTF-8">
-        <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="css/layout.css">
-        <link rel="stylesheet" type="text/css" href="css/reset.css">
-        <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
 
-    </head>
-    <body>
-        <header>
-            <div id = "title">
-                <a href="home.html">Pets hotel</a>
-                <form action="" id = "search" method = "get">
-                    <input type="text" id = "searchtxt" placeholder = "Search" />
-                    <button type = "submit" id = "searchbtn" value = "searching"></button>
-                </form>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <div id="homeLogo">Pets hotel</div>
+            <div class="loginButton">
+                <a href="login.html">
+                    <button>Login</button>
+                </a>
+                <a href="register.html">
+                    <button>
+                        Register
+                    </button>
+                </a>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li id = "home" class = "menuItem">
-                        <a href="home.html">Home</a>
-                    </li>
-                    <li id = "hotels" class = "menuItem">
-                        <a href=".html">
-                            Reservation
-                        </a>
-                    </li>
-                    <li id = "action" class = "menuItem">
-                        <a href="home.html">Gallery</a>
-                    </li>
-                    <li id = "popular" class = "menuItem">
-                        <a href="home.html">Prices</a>
-                    </li>
-                    <li id = "comedy" class = "menuItem">
-                        <a href="home.html">Contact</a>
-                    </li>
-                </ul>
-                <div class="clearFix"></div>
-            </nav>
-        </header>
-    <main>
-        <div class = "hotel">
-            <img id ="image" src="" alt="" />
-            <a id = "learnMore" href="">
-                <button id = "more">Learn more</button>	
-            </a>			
         </div>
-        <div class = "moreHotel">
+        <nav class="menu">
+            <ul>
+                <li id="home" class="menuItem">
+                    <a href="home.html">Home</a>
+                </li>
+                <li id="hotels" class="menuItem">
+                    <a href=".html">
+                        Reservation
+                    </a>
+                </li>
+                <li id="action" class="menuItem">
+                    <a href="home.html">Gallery</a>
+                </li>
+                <li id="popular" class="menuItem">
+                    <a href="home.html">Prices</a>
+                </li>
+                <li id="comedy" class="menuItem">
+                    <a href="home.html">Contact</a>
+                </li>
+            </ul>
+            <div class="clearFix"></div>
+        </nav>
+    </header>
+    <main>
+        <div class="hotel">
+            <img id="image" src="" alt="" />
+            <a id="learnMore" href="">
+                <button id="more">Learn more</button>
+            </a>
+        </div>
+        <div class="moreHotel">
             <header>More Movies</header>
-            <div class = "gallery"> 
+            <div class="gallery">
                 <section class="galleryContent">
                     <article class="imgBox">
                         <img src="css/images/1.jpg" alt="movie" class="hotelGallery" />
@@ -88,19 +96,19 @@
 
             </div>
         </div>
-        <div class ="mail">
+        <div class="mail">
             <form action="get">
-                 <input type="hidden" name="form-type" value="contact"/>
-                    <fieldset>
+                <input type="hidden" name="form-type" value="contact" />
+                <fieldset>
                     <div>
                         <div>
                             <label>
-                                <input type="text" name="name" placeholder="Your Name"/>
+                                <input type="text" name="name" placeholder="Your Name" />
                             </label>
                         </div>
                         <div>
                             <label>
-                                <input type="text" name="email" placeholder="Your Email"/>
+                                <input type="text" name="email" placeholder="Your Email" />
                             </label>
                         </div>
                         <div class="textarea">
@@ -113,11 +121,11 @@
                             <button class="btn" type="submit">Send</button>
                         </div>
                     </div>
-             </fieldset>
-    </form>
-                
- </div>
-        
+                </fieldset>
+            </form>
+
+        </div>
+
         <div class="clearFix"></div>
     </main>
     <footer>
@@ -125,28 +133,34 @@
             <li class="googlePlus">
                 <a href="https://plus.google.com/">
                     <img src="css/images/g.png" alt="g+" />
-                </a></li>
+                </a>
+            </li>
             <li class="pinterest">
                 <a href="https://www.pinterest.com/">
                     <img src="css/images/pinterest.png" alt="pinterest" />
-                </a></li>
+                </a>
+            </li>
             <li class="twitter">
                 <a href="https://twitter.com/">
                     <img src="css/images/twitter.png" alt="twitter" />
-                </a></li>
+                </a>
+            </li>
             <li class="facebook">
                 <a href="https://www.facebook.com/">
                     <img src="css/images/facebook.png" alt="facebook" />
-                </a></li>
+                </a>
+            </li>
             <li class="instagram">
                 <a href="https://www.instagram.com/">
                     <img src="css/images/instagram.png" alt="instagram" />
-                </a></li>
+                </a>
+            </li>
         </ul>
     </footer>
 
-    <script  type="text/javascript" src="js/images.js"></script>
-    <script  type="text/javascript" src="js/random.js"></script>
+    <script type="text/javascript" src="js/images.js"></script>
+    <script type="text/javascript" src="js/random.js"></script>
 
 </body>
+
 </html>
