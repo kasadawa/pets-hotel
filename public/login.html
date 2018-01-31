@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
-
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/login.js"></script>
+    
 </head>
 
 <body>
@@ -50,12 +52,12 @@
     </header>
     <main>
         <div class="loginTitle">Login</div>
-        <form class="loginForm">
+        <form action="#" class="loginForm" >
             <label for="email">Email: </label>
-            <input id="email" placeholder="Type your email"/></br></br>
+            <input id="email" type="email" placeholder="Type your email"/></br></br>
             <label for="password">Password: </label>
-            <input id="password" placeholder="Type your password"/></br></br>
-            <button onclick="">Login</button>
+            <input id="password" type="password" placeholder="Type your password"/></br></br>
+            <button onclick="loginAction()">Login</button>
         </form>
     </main>
     <footer>
