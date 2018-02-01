@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
-
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -24,6 +24,13 @@
                     </button>
                 </a>
             </div>
+
+            <div class="logoutDiv">
+                    <button onclick="logout()">
+                        Logout
+                    </button>
+            </div>
+            
         </div>
         <nav class="menu">
             <ul>
@@ -48,93 +55,90 @@
     </header>
     <main>
         <div>
-            <table class="tableStype" cellspacing="0" cellpadding="0"> 
-                <tbody>
-                    <tr>
-                        <td class="tdStyle" colspan="5">
-                            <strong>
-                                <span style="color: #ffffff;">Dog prices</span>
-                            </strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td style="height: 30px;">
-                            <span style="color: #3b3b39;">Dog Size</span>
-                        </td>
-                        <td style="height: 30px;">
-                            <span style="color: #3b3b39;">Price per day</span>
-                        </td>
-                        <td style="height: 30px;">
-                            <span style="color: #3b3b39;">Per second Dog</span>
-                        </td>
-                        <td style="height: 30px;">
-                             <span style="color: #3b3b39;">Suitable for</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td align="left" valign="top">Small</td>
-                        <td align="left" valign="top">18.00</td>
-                        <td align="left" valign="top">12.50</td>
-                        <td align="left">Jack Russells, Cocker, <br>Spaniels etc.</td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td align="left" valign="top">Medium/Large</td>
-                        <td align="left" valign="top">20.00</td>
-                        <td align="left" valign="top">12.50</td>
-                        <td align="left">Labradors, Setters, <br>German Shepards etc.</td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td align="left" valign="top">Extra Large</td>
-                        <td align="left" valign="top">21.00</td>
-                        <td align="left" valign="top">12.50</td>
-                        <td align="left">Great Danes, <br>Mountain Dogs etc.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="tableStyle" cellspacing="0" cellpadding="0"> 
-                <tbody>
-                    <tr>
-                        <td class="tdStyle" colspan="5">
-                            <strong>
-                                <span style="color: #ffffff;">Cat prices</span>
-                            </strong>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td style="height: 30px;">
-                            <span style="color: #3b3b39;">Room Size</span>
-                        </td>
-                        <td style="height: 30px;">
-                            <span style="color: #3b3b39;">Price per day</span>
-                        </td>
-                        <td style="height: 30px;">
-                            <span style="color: #3b3b39;">Per second Cat</span>
-                        </td>
-                        <td style="height: 30px;">
-                                <span style="color: #3b3b39;">Suitable for</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td align="left" valign="top">Standart</td>
-                        <td align="left" valign="top">12.00</td>
-                        <td align="left" valign="top">9.00</td>
-                        <td align="left">Up to 2 cats</td>
-                    </tr>
-                    <tr>
-                        <td style="width: 10px;">&nbsp</td>
-                        <td align="left" valign="top">Family</td>
-                        <td align="left" valign="top">Contact us</td>
-                        <td align="left" valign="top">Contact us</td>
-                        <td align="left">Up to 5 cats</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tableDiv">
+                <table class="tableStyle" cellspacing="0" cellpadding="0"> 
+                    <tbody>
+                        <tr>
+                            <td class="tdStyle" colspan="5">
+                                <strong>
+                                    <span style="color: #ffffff;">Dog prices</span>
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Dog Size</span>
+                            </td>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Price per day</span>
+                            </td>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Per second Dog</span>
+                            </td>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Suitable for</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">Small</td>
+                            <td align="left" valign="top">18.00</td>
+                            <td align="left" valign="top">12.50</td>
+                            <td align="left">Jack Russells, Cocker, <br>Spaniels etc.</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">Medium/Large</td>
+                            <td align="left" valign="top">20.00</td>
+                            <td align="left" valign="top">12.50</td>
+                            <td align="left">Labradors, Setters, <br>German Shepards etc.</td>
+                        </tr>
+                        <tr>
+                            <td align="left" valign="top">Extra Large</td>
+                            <td align="left" valign="top">21.00</td>
+                            <td align="left" valign="top">12.50</td>
+                            <td align="left">Great Danes, <br>Mountain Dogs etc.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableDiv">
+                <table class="tableStyle" cellspacing="0" cellpadding="0"> 
+                    <tbody>
+                        <tr>
+                            <td class="tdStyle" colspan="5">
+                                <strong>
+                                    <span style="color: #ffffff;">Cat prices</span>
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Room Size</span>
+                            </td>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Price per day</span>
+                            </td>
+                            <td style="height: 30px;">
+                                <span class="spanStyle">Per second Cat</span>
+                            </td>
+                            <td style="height: 30px;">
+                                    <span class="spanStyle">Suitable for</span>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td align="left" valign="top">Standart</td>
+                            <td align="left" valign="top">12.00</td>
+                            <td align="left" valign="top">9.00</td>
+                            <td align="left">Up to 2 cats</td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td align="left" valign="top">Family</td>
+                            <td align="left" valign="top">Contact us</td>
+                            <td align="left" valign="top">Contact us</td>
+                            <td align="left">Up to 5 cats</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>    
         </div>
     </main>
     <footer>
