@@ -1,9 +1,9 @@
+"use strict";
 const _SERVER = 'http://localhost:3000';
 
 function loginAction(){
     var email = document.getElementById('email').value; 
     var password = document.getElementById('password').value;
-    
     if(validateEmail(email) === true){
         $.ajax({
             method:"POST",
@@ -15,7 +15,7 @@ function loginAction(){
                     window.localStorage.setItem('logged', 'true');
                     window.localStorage.setItem('login-email', res.info.email);
                     window.localStorage.setItem('login-phone', res.info.phone);
-                    window.localStorage.setItem('login-email', res.info.address);
+                    window.localStorage.setItem('login-address', res.info.address);
                     window.location.replace(_SERVER);
                 }else{
                     alert('Wrong email/password combination')

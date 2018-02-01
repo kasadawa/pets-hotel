@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
@@ -15,7 +15,7 @@
         <div id="title">
             <div id="homeLogo">Pets hotel</div>
             <div class="loginButton">
-                <a href="#">
+                <a href="login.html">
                     <button>Login</button>
                 </a>
                 <a href="register.html">
@@ -24,11 +24,13 @@
                     </button>
                 </a>
             </div>
+
             <div class="logoutDiv">
-                <button onclick="logout()">
-                    Logout
-                </button>
+                    <button onclick="logout()">
+                        Logout
+                    </button>
             </div>
+
         </div>
         <nav class="menu">
             <ul>
@@ -36,17 +38,17 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li id="hotels" class="menuItem">
-                    <a href=".html">
-                        Reservation
+                    <a href="profile.html">
+                        Profile
                     </a>
                 </li>
-                <li id="action" class="menuItem">
-                    <a href="index.html">Gallery</a>
+                <li class="menuItem">
+                    <a href="gallery.html">Gallery</a>
                 </li>
-                <li id="popular" class="menuItem">
-                    <a href="prices.html">Prices</a>
+                <li class="menuItem">
+                    <a href="index.html">Prices</a>
                 </li>
-                <li id="comedy" class="menuItem">
+                <li class="menuItem">
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
@@ -54,7 +56,40 @@
         </nav>
     </header>
     <main>
-        <div><p id='profileTitle'>Profile</p></div>
+
+        <div class="moreHotel">
+            <header>Gallery</header>
+            <div class="gallery">
+                <section class="galleryContent">
+                    <article class="imgBox">
+                        <img src="images/01.jpg" alt="pet" class="hotelGallery" />
+                    </article>
+                </section>
+                <section class="galleryContent">
+                    <article class="imgBox">
+                        <img src="images/04.jpg" alt="pet" class="hotelGallery" />
+                    </article>
+                </section>
+                <section class="galleryContent">
+                    <article class="imgBox">
+                        <img src="images/05.jpg" alt="pet" class="hotelGallery" />
+                    </article>
+                </section>
+                <section class="galleryContent">
+                    <article class="imgBox">
+                        <img src="images/06.jpg" alt="pet" class="hotelGallery" />
+                    </article>
+                </section>
+                <section class="galleryContent">
+                    <article class="imgBox">
+                        <img src="images/07.jpg" alt="pet" class="hotelGallery" />
+                    </article>
+                </section>
+
+            </div>
+        </div>
+        
+        <div class="clearFix"></div>
     </main>
     <footer>
         <ul class="inline-list">
@@ -88,8 +123,7 @@
 
     <script type="text/javascript" src="js/images.js"></script>
     <script type="text/javascript" src="js/random.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/info.js"></script>
+
 </body>
 
 </html>
