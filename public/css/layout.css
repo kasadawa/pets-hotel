@@ -423,3 +423,10 @@ label{
     width: 30px;
     padding-top: 15px;
 }
+
+#profileTitle{
+    color:white;
+    text-align: center;
+    font-size: 37px;
+    padding-top: 2%;
+}
