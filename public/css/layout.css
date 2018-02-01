@@ -403,7 +403,7 @@ label{
     height: 70px;
 }
 
-.tableStype {
+.tableStyle {
     width: 100%;
     background-color: #efedec;
     font-family: Georgia;
@@ -415,6 +415,7 @@ label{
     background-color: #494843;
     padding-left: 10px; 
     height: 25px;
+    margin: 0 auto;
 }
 
 .petPic {
