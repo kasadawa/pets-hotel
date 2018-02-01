@@ -3,15 +3,24 @@ const _SERVER = 'http://localhost:3000';
 function loginAction(){
     var email = document.getElementById('email').value; 
     var password = document.getElementById('password').value;
-
+    
     if(validateEmail(email) === true){
-            $.ajax({
-                method:"POST",
-                url: _SERVER + '/login',
-                data: { email, password}
-            })
-            .done( (response)=> {
-                console.log(response)
+        $.ajax({
+            method:"POST",
+            url: _SERVER + '/login',
+            data: { email, password}
+        })
+        .done( (res)=> {
+            if(!!res.success){
+                    window.localStorage.setItem('logged', 'true');
+                    window.localStorage.setItem('login-email', res.info.email);
+                    window.localStorage.setItem('login-phone', res.info.phone);
+                    window.localStorage.setItem('login-email', res.info.address);
+                    window.location.replace(_SERVER);
+                }else{
+                    alert('Wrong email/password combination')
+                }
+
             })
 
         }else{

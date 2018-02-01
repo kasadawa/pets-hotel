@@ -357,6 +357,15 @@ input[type="button"]:hover{
     float: right;
     margin:90px 0 0 40px;
 }
+
+
+.logoutDiv{
+    width:auto;
+    height: auto; 
+    float: right;
+    margin:90px 0 0 40px;
+    display: none;
+}
 form.loginForm{
     /* display: inline-block; */
     text-align: center;
@@ -370,6 +379,7 @@ form.loginForm{
     font-size: 36px; 
     font-weight: bold;
 }
+
 label{
     color:white;
     display:inline-block;
