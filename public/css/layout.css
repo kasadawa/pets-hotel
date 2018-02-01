@@ -387,3 +387,9 @@ label{
     text-align: center;
     font-size: 25px;
 }
+
+.googleApi {
+    text-align: center;
+    height: 70px;
+    padding-top: 15px;
+}
