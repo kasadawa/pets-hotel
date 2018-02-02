@@ -14,54 +14,72 @@
     <header>
         <div id="title">
             <div id="homeLogo">Pets hotel</div>
-            <div class="loginButton">
-                <a href="login.html">
-                    <button>Login</button>
-                </a>
-
-                    <button>
-                        Register
-                    </button>
-
-            </div>
         </div>
         <nav class="menu">
             <ul>
-                <li id="home" class="menuItem">
-                    <a href="home.html">Home</a>
+                <li class="menuItem">
+                    <a href="index.html">Home</a>
                 </li>
-                <li id="hotels" class="menuItem">
+                <li class="menuItem">
                     <a href="profile.html">
                         Profile
                     </a>
                 </li>
-                <li id="action" class="menuItem">
-                    <a href="home.html">Gallery</a>
+                <li class="menuItem">
+                    <a href="gallery.html">Gallery</a>
                 </li>
-                <li id="popular" class="menuItem">
-                    <a href="home.html">Prices</a>
+                <li class="menuItem">
+                    <a href="prices.html">Prices</a>
                 </li>
-                <li id="comedy" class="menuItem">
-                    <a href="home.html">Contact</a>
+                <li class="menuItem">
+                    <a href="contact.html">Contact</a>
                 </li>
+                <div class="loginButton">
+                    <li class="login-panel">
+                        <a href="#">
+                            Register
+                        </a>
+                    </li>
+                    <li class="login-panel">
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+                </div>
+                <div class="logoutDiv">
+                    <li class="login-panel">
+                        <a onclick="logout(event)" href="#">
+                            Logout
+                        </a>
+                    </li>
+                </div>
             </ul>
-            <div class="clearFix"></div>
         </nav>
     </header>
     <main>
         <div class="loginTitle">Register</div>
         <form class="loginForm">
             <label for="email">Email: </label>
-            <input id="email" type="email" placeholder="Enter your email"/></br></br>
+            <input id="email" type="email" placeholder="Enter your email" />
+            </br>
+            </br>
             <label for="adress">Adress: </label>
-            <input id="address" placeholder="Enter your adress"/></br></br>
+            <input id="address" placeholder="Enter your adress" />
+            </br>
+            </br>
             <label for="phone">Phone: </label>
-            <input id="phone" type="number" placeholder="Enter your phone"/></br></br>
+            <input id="phone" type="number" placeholder="Enter your phone" />
+            </br>
+            </br>
             <label for="password">Password: </label>
-            <input id="password" type="password" placeholder="Enter your password"/></br></br>
+            <input id="password" type="password" placeholder="Enter your password" />
+            </br>
+            </br>
             <label for="confirm_password">Re-password: </label>
-            <input id="confirm_password" type="password" placeholder="Confirm your password"/></br></br>
-            <button type="button" onclick="registerAction()">Register</button>
+            <input id="confirm_password" type="password" placeholder="Confirm your password" />
+            </br>
+            </br>
+            <input type="button" onclick="registerAction()" value="Register" />
         </form>
     </main>
     <footer>
@@ -95,10 +113,9 @@
     </footer>
 
     <script type="text/javascript" src="js/images.js"></script>
-    <script type="text/javascript" src="js/random.js"></script>
     <script src="js/password.js"></script>
     <script src="js/register.js"></script>
-    
+
 </body>
 
 </html>

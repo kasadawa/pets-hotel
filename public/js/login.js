@@ -1,5 +1,4 @@
 "use strict";
-const _SERVER = 'http://localhost:3000';
 
 function loginAction(){
     var email = document.getElementById('email').value; 

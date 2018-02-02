@@ -6,7 +6,6 @@ router.post('/login', (req,res,next)=>{
     let {email, password} = req.body;
     let message= 'success';
     db.users.findOne({email: email, password: password},(err,docs)=>{
-      console.log(docs)
       if(!err && !!docs){
         res.json({success: true , info:docs });
       }else{ 

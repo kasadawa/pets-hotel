@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/profile.css">
@@ -16,64 +16,70 @@
     <header>
         <div id="title">
             <div id="homeLogo">Pets hotel</div>
-            <div class="loginButton">
-                <a href="login.html">
-                    <button>Login</button>
-                </a>
-                <a href="register.html">
-                    <button>
-                        Register
-                    </button>
-                </a>
-            </div>
-            <div class="logoutDiv">
-                <button onclick="logout()">
-                    Logout
-                </button>
-            </div>
         </div>
         <nav class="menu">
             <ul>
-                <li id="home" class="menuItem">
+                <li class="menuItem">
                     <a href="index.html">Home</a>
                 </li>
-                <li id="hotels" class="menuItem">
+                <li class="menuItem">
                     <a href="profile.html">
                         Profile
                     </a>
                 </li>
-                <li id="action" class="menuItem">
-                    <a href="index.html">Gallery</a>
+                <li class="menuItem">
+                    <a href="gallery.html">Gallery</a>
                 </li>
-                <li id="popular" class="menuItem">
+                <li class="menuItem">
                     <a href="prices.html">Prices</a>
                 </li>
-                <li id="comedy" class="menuItem">
+                <li class="menuItem">
                     <a href="contact.html">Contact</a>
                 </li>
+
+                <div class="loginButton">
+                    <li class="login-panel">
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+                    <li class="login-panel">
+                        <a href="login.html">
+                            Login
+                        </a>
+                    </li>
+                </div>
+                <div class="logoutDiv">
+                    <li class="login-panel">
+                        <a onclick="logout(event)" href="#">
+                            Logout
+                        </a>
+                    </li>
+                </div>
             </ul>
             <div class="clearFix"></div>
         </nav>
     </header>
     <main>
-        <div><p id='profileTitle'>Profile</p></div>
+        <div>
+            <p id='profileTitle'>Profile</p>
+        </div>
         <div id="infoTable">
-
-            <table cellspacing="0" cellpadding="0"> 
+            <table cellspacing="0" cellpadding="0">
                 <tbody>
                     <tr>
-                        <td  colspan="5">
+                        <td colspan="5">
                             <strong>
-                                <span style="color: #ffffff;">My profile</span>
+                                <span>My profile</span>
                             </strong>
                         </td>
                     </tr>
                     <tr>
-                        <td valign="top" >Email</td>
+                        <td valign="top">Email</td>
                         <td id="email"></td>
                     </tr>
                     <tr>
-                        <td valign="top" >Address</td>
+                        <td valign="top">Address</td>
                         <td id="address"></td>
                     </tr>
                     <tr>
@@ -87,8 +93,6 @@
                     </tr>
                 </tbody>
             </table>
-
-
         </div>
     </main>
     <footer>
@@ -120,9 +124,6 @@
             </li>
         </ul>
     </footer>
-
-    <script type="text/javascript" src="js/images.js"></script>
-    <script type="text/javascript" src="js/random.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/profile.js"></script>
 

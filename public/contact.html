@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Contact us</title>
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
@@ -14,52 +14,67 @@
     <header>
         <div id="title">
             <div id="homeLogo">Pets hotel</div>
-            <div class="loginButton">
-                <a href="#">
-                    <button>Login</button>
-                </a>
-                <a href="register.html">
-                    <button>
-                        Register
-                    </button>
-                </a>
-            </div>
         </div>
         <nav class="menu">
             <ul>
-                <li id="index" class="menuItem">
+                <li class="menuItem">
                     <a href="index.html">Home</a>
                 </li>
-                <li id="reservation" class="menuItem">
-                    <a href="reservation.html">Reservation</a>
+                <li class="menuItem">
+                    <a href="profile.html">Profile</a>
                 </li>
-                <li id="gallery" class="menuItem">
+                <li class="menuItem">
                     <a href="gallery.html">Gallery</a>
                 </li>
-                <li id="prices" class="menuItem">
+                <li class="menuItem">
                     <a href="prices.html">Prices</a>
                 </li>
-                <li id="contact" class="menuItem">
+                <li class="menuItem">
                     <a href="contact.html">Contact</a>
                 </li>
+
+                <div class="loginButton">
+                        <li class="login-panel">
+                            <a href="register.html">
+                                Register
+                            </a>
+                        </li>
+                        <li class="login-panel">
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+                    </div>
+                    <div class="logoutDiv">
+                        <li class="login-panel">
+                            <a onclick="logout(event)" href="#">
+                                Logout
+                            </a>
+                        </li>
+                    </div>
             </ul>
             <div class="clearFix"></div>
         </nav>
     </header>
-    <main>  
-        <h1 class="paragraph"><img src="css/images/contact_us.png"></h1></br>
-        <p class="paragraph">Pets Hotel warmly welcomes visitors to view our pet accommodation. </br> If you are looking to board your pet, we understand that you will get piece </br> of mind from visiting any potential boarding arrangements before making a booking.</p></br>
-        <p class="paragraph">Our full postal address is: </p></br>
-        <p class="petsHotel">Pets Hotel</p></br>
-        <p class="paragraph">Sofia, str. Ivan Vazov 13 b</p></br>
+    <main>
+        <h1 class="paragraph">
+            <img src="css/images/contact_us.png">
+        </h1>
+        </br>
+        <p class="paragraph">Pets Hotel warmly welcomes visitors to view our pet accommodation. </br> If you are looking to board your pet, we
+            understand that you will get piece </br> of mind from visiting any potential boarding arrangements before making
+            a booking.</p>
+        </br>
+        <p class="paragraph">Our full postal address is: </p>
+        </br>
+        <p class="petsHotel">Pets Hotel</p>
+        </br>
+        <p class="paragraph">Sofia, str. Ivan Vazov 13 b</p>
+        </br>
         <p class="paragraph">Tel. 0886521987</p>
         <img class="petPic" src="css/images/pet-corner-contact.png">
         <div class="googleApi">
-            <iframe
-                width="400"
-                height="250"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCyXBBqbsSF79bnkyD0tJo5pcekHEkpf1s
+            <iframe width="400" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCyXBBqbsSF79bnkyD0tJo5pcekHEkpf1s
                 &q=Space+Needle,Seattle+WA" allowfullscreen>
             </iframe>
         </div>
@@ -93,10 +108,6 @@
             </li>
         </ul>
     </footer>
-
-    <script type="text/javascript" src="js/images.js"></script>
-    <script type="text/javascript" src="js/random.js"></script>
-
 </body>
 
 </html>

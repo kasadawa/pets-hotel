@@ -4,7 +4,6 @@ const _SERVER = 'http://localhost:3000';
 window.onload = ()=>{
     let loginTrigger = window.localStorage.getItem('logged');
     if(!!loginTrigger){
-        console.log('chech')
         let loginDiv = document.getElementsByClassName('loginButton');
         loginDiv[0].style.display = "none";
         let logoutDiv = document.getElementsByClassName('logoutDiv');
@@ -13,7 +12,8 @@ window.onload = ()=>{
 }
 
 
-function logout(){
+function logout(e){
+    e.preventDefault();
     window.localStorage.removeItem('logged');
     window.localStorage.removeItem('login-email');
     window.localStorage.removeItem('login-address');    

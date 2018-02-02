@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>Prices</title>
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_design.css">
@@ -14,41 +14,43 @@
     <header>
         <div id="title">
             <div id="homeLogo">Pets hotel</div>
-            <div class="loginButton">
-                <a href="#">
-                    <button>Login</button>
-                </a>
-                <a href="register.html">
-                    <button>
-                        Register
-                    </button>
-                </a>
-            </div>
-
-            <div class="logoutDiv">
-                    <button onclick="logout()">
-                        Logout
-                    </button>
-            </div>
-            
         </div>
         <nav class="menu">
             <ul>
-                <li id="index" class="menuItem">
-                        <a href="index.html">Home</a>
+                <li class="menuItem">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menuItem">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li class="menuItem">
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="menuItem">
+                    <a href="prices.html">Prices</a>
+                </li>
+                <li class="menuItem">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <div class="loginButton">
+                    <li class="login-panel">
+                        <a href="register.html">
+                            Register
+                        </a>
                     </li>
-                    <li id="reservation" class="menuItem">
-                        <a href="reservation.html">Reservation</a>
+                    <li class="login-panel">
+                        <a href="login.html">
+                            Login
+                        </a>
                     </li>
-                    <li id="gallery" class="menuItem">
-                        <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="logoutDiv">
+                    <li class="login-panel">
+                        <a onclick="logout(event)" href="#">
+                            Logout
+                        </a>
                     </li>
-                    <li id="prices" class="menuItem">
-                        <a href="prices.html">Prices</a>
-                    </li>
-                    <li id="contact" class="menuItem">
-                        <a href="contact.html">Contact</a>
-                    </li>
+                </div>
             </ul>
             <div class="clearFix"></div>
         </nav>
@@ -56,7 +58,7 @@
     <main>
         <div>
             <div class="tableDiv">
-                <table class="tableStyle" cellspacing="0" cellpadding="0"> 
+                <table class="tableStyle" cellspacing="0" cellpadding="0">
                     <tbody>
                         <tr>
                             <td class="tdStyle" colspan="5">
@@ -83,25 +85,28 @@
                             <td align="left" valign="top">Small</td>
                             <td align="left" valign="top">18.00</td>
                             <td align="left" valign="top">12.50</td>
-                            <td align="left">Jack Russells, Cocker, <br>Spaniels etc.</td>
+                            <td align="left">Jack Russells, Cocker,
+                                <br>Spaniels etc.</td>
                         </tr>
                         <tr>
                             <td align="left" valign="top">Medium/Large</td>
                             <td align="left" valign="top">20.00</td>
                             <td align="left" valign="top">12.50</td>
-                            <td align="left">Labradors, Setters, <br>German Shepards etc.</td>
+                            <td align="left">Labradors, Setters,
+                                <br>German Shepards etc.</td>
                         </tr>
                         <tr>
                             <td align="left" valign="top">Extra Large</td>
                             <td align="left" valign="top">21.00</td>
                             <td align="left" valign="top">12.50</td>
-                            <td align="left">Great Danes, <br>Mountain Dogs etc.</td>
+                            <td align="left">Great Danes,
+                                <br>Mountain Dogs etc.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="tableDiv">
-                <table class="tableStyle" cellspacing="0" cellpadding="0"> 
+                <table class="tableStyle" cellspacing="0" cellpadding="0">
                     <tbody>
                         <tr>
                             <td class="tdStyle" colspan="5">
@@ -121,7 +126,7 @@
                                 <span class="spanStyle">Per second Cat</span>
                             </td>
                             <td style="height: 30px;">
-                                    <span class="spanStyle">Suitable for</span>
+                                <span class="spanStyle">Suitable for</span>
                             </td>
                         </tr>
                         <tr style="height: 30px;">
@@ -138,7 +143,7 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>    
+            </div>
         </div>
     </main>
     <footer>
@@ -170,10 +175,6 @@
             </li>
         </ul>
     </footer>
-
-    <script type="text/javascript" src="js/images.js"></script>
-    <script type="text/javascript" src="js/random.js"></script>
-
 </body>
 
 </html>
